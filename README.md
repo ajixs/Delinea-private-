@@ -18,7 +18,7 @@ type : http
 hostname : masukan host yang digunakan untuk crl 
 
 CMD run admmin 
-buat schaduler :
+buat schaduler : <br>
 schtasks /create /tn "CLR Mirror Update" /tr "powershell.exe -NoProfile -ExecutionPolicy Bypass -File E:\Clr_Miror\clr_mirror.ps1" /sc HOURLY /mo 1 /ru SYSTEM /rl HIGHEST /f
 
 test run schaduler 
