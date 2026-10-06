@@ -122,7 +122,7 @@ C:\Windows\System32\drivers\etc\hosts
 Tambahkan hostname CRL dan arahkan ke IP Secret Server.
 Contoh:
 ```text
-10.16.114.221    cdp.geotrust.com
+192.168.1.2    cdp.geotrust.com
 ```
 Kemudian flush DNS:
 ```cmd
@@ -135,7 +135,7 @@ ping cdp.geotrust.com
 Hostname harus resolve ke IP Secret Server.
 Contoh:
 ```text
-cdp.geotrust.com → 10.16.114.221
+cdp.geotrust.com → 192.168.1.2
 ```
 ---
 E. Test CRL dari Session Connector
@@ -145,7 +145,7 @@ curl.exe -v http://cdp.geotrust.com/GeoTrustTLSRSACAG1.crl -o GeoTrustTLSRSACAG1
 ```
 Jika berhasil, output harus menunjukkan:
 ```text
-Established connection to cdp.geotrust.com (10.16.114.221 port 80)
+Established connection to cdp.geotrust.com (192.168.1.2 port 80)
 
 HTTP/1.1 200 OK
 Content-Type: application/pkix-crl
@@ -171,7 +171,7 @@ cdp.geotrust.com
         | Scheduled Download setiap 1 jam
         v
 Secret Server
-10.16.114.221
+192.168.1.2
         |
         | E:\CRL_Miror\GeoTrustTLSRSACAG1.crl
         |
@@ -181,7 +181,7 @@ Session Connector
         |
         | hosts override
         v
-cdp.geotrust.com → 10.16.114.221
+cdp.geotrust.com → 192.168.1.2
 ```
 ---
 Catatan
@@ -192,7 +192,7 @@ cdp.geotrust.com
 ke Internet agar script dapat melakukan download CRL terbaru.
 Jangan tambahkan hosts override berikut pada Secret Server:
 ```text
-10.16.114.221    cdp.geotrust.com
+192.168.1.2    cdp.geotrust.com
 ```
 Hosts override hanya digunakan pada Session Connector.
 Dengan demikian:
