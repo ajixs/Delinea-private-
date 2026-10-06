@@ -22,7 +22,7 @@ Contoh:
 2. CRL Mirror
 CRL Mirror digunakan agar Session Connector dapat melakukan certificate revocation check tanpa harus mengakses CRL server di Internet secara langsung.
 A. Secret Server
-1. Download Script
+Download Script
 Download file:
 ```text
 crl_mirror_script.ps1
