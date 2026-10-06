@@ -11,7 +11,7 @@ Secret Server <br>
 download  clr_mirror_script.ps1 kemudian pindah sesuai folder di secret server <br>
 IIS :<br>
 buat site, <br>
-dan ini parameter :<br>
+dan isi parameter :<br>
 site name  : bebas <br>
 pisical path: pilih folder sesuai yang sebelumnya di buat <br>
 type : http <br>
