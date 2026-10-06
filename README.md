@@ -20,7 +20,7 @@ Contoh:
 ```
 ---
 2. CRL Mirror
-CRL Mirror digunakan agar Session Connector dapat melakukan certificate revocation check tanpa harus mengakses CRL server di Internet secara langsung.
+CRL Mirror digunakan agar Session Connector dapat melakukan certificate revocation check tanpa harus mengakses CRL server di Internet secara langsung.<br>
 A. Secret Server
 Download Script
 Download file:
